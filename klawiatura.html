@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ben = Array()
+        for (let marena = 65; marena <=90 ; marena++)
+        {
+            ben.push(String.fromCharCode(marena));
+        }
+
+        for (let marena = 0; marena < ben.length; marena++)
+        {
+            let b = document.createElement("button");
+            b.innerHTML = ben[marena];
+            document.body.appendChild(b);
+            b.addEventListener("click", l);
+        }
+
+        function l(argument)
+        {
+            console.log(argument.scrElement.innerHTML);
+        }
+    </script>
+</body>
+</html>
